@@ -24,7 +24,7 @@ let Container = styled.div`
     }
 `
 export default function Login(props) {
-    let myURL = encodeURI("http://localhost:3000/callback");
+    let myURL = encodeURI("https://competent-swartz-2b5b6e.netlify.app/callback");
     let clientId = "2cede5eb11ad40a7957d539e35fed5d7";
     let spotify = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${myURL}&scope=user-read-private%20user-read-email&state=34fFs29kd09`
     return (
